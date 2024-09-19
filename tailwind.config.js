@@ -17,7 +17,7 @@ module.exports = {
           },
         ],
       },
-      color: {
+      colors: {
         white: "#fffefe",
         "wild-sand": "#f3f4f6",
         "bright-gray": "#394150",
