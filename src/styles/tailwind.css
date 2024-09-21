@@ -27,3 +27,21 @@
     src: url("../fonts/Outfit/Outfit-SemiBold.ttf.ttf") format("truetype");
   }
 }
+
+.see-all-members-tile {
+  @apply sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 lg:row-start-3 lg:row-end-4 xl:row-start-2 xl:row-end-3;
+}
+
+section > div[class*="bg-"]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url(../images/decorative/Gradient.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+}

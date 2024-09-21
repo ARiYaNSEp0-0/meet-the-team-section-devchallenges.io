@@ -38,68 +38,125 @@
     />
     <link rel="stylesheet" href="./styles/tailwind.css" />
   </head>
-  <body>
-    <main>
-      <section>
-        <div>
-          <aside>Our team</aside>
-          <h1>Meet the brain</h1>
-          <p>
+  <body class="bg-white text-base font-normal leading-5 text-bright-gray">
+    <main class="mx-auto max-w-screen-xl px-8 py-18 sm:px-8 lg:px-20 xl:px-18">
+      <section
+        class="grid overflow-hidden rounded-3xl bg-wild-sand sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
+        <div class="col-span-full space-y-3 p-8 xl:col-span-2">
+          <aside class="text-royal-blue">Our team</aside>
+          <h1 class="text-3xl font-medium text-black sm:text-4.5xl">
+            Meet the brain
+          </h1>
+          <p class="max-w-paragraph">
             We are proud to have them as part of our community and look forward
             to continuing to push the boundaries of what's possible in the world
             of digital art.
           </p>
         </div>
-        <ul>
-          <li>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <h2>Liam Novak</h2>
-                <h3>Software Engineer</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <h2>Sophia Moretti</h2>
-                <h3>Business Development Manager</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <h2>Ethan Rossi</h2>
-                <h3>Business Development Manager</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <h2>Isabella Ricci</h2>
-                <h3>UX Designer</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="" alt="" />
-              <figcaption>
-                <h2>Noah Conti</h2>
-                <h3>Content Creator</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <a href="#">See all members (icon)</a>
-          </li>
-        </ul>
+        <div class="after:content-none absoulte bottom-0 left-0 w-full h-1/2   relative z-0 flex min-h-72 items-end bg-melrose">
+          <figure>
+            <img
+              class="pointer-events-none relative -z-10 select-none"
+              src="./images/person/person_1@2x.png"
+              alt="Liam Novak picture."
+            />
+
+            <figcaption
+              class="absolute bottom-0 left-0 z-50 space-y-1 px-6 py-5"
+            >
+              <h2 class="text-xl font-semibold text-white">Liam Novak</h2>
+              <h3 class="text-sm capitalize text-white">Software Engineer</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="after:content-none absoulte bottom-0 left-0 w-full h-1/2   relative z-0 flex min-h-72 items-end bg-lavender-pink">
+          <figure>
+            <img
+              class="pointer-events-none relative -z-10 select-none"
+              src="./images/person/person_2@2x.png"
+              alt="Sophia Moretti picture."
+            />
+
+            <figcaption
+              class="absolute bottom-0 left-0 z-50 space-y-1 px-6 py-5"
+            >
+              <h2 class="text-xl font-semibold text-white">Sophia Moretti</h2>
+              <h3 class="text-sm capitalize text-white">
+                Business Development Manager
+              </h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="after:content-none absoulte bottom-0 left-0 w-full h-1/2   relative z-0 flex min-h-72 items-end bg-jordy-blue">
+          <figure>
+            <img
+              class="pointer-events-none relative -z-10 select-none"
+              src="./images/person/person_3@2x.png"
+              alt="Ethan Rossi picture."
+            />
+
+            <figcaption
+              class="absolute bottom-0 left-0 z-50 space-y-1 px-6 py-5"
+            >
+              <h2 class="text-xl font-semibold text-white">Ethan Rossi</h2>
+              <h3 class="text-sm capitalize text-white">
+                Business Development Manager
+              </h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="after:content-none absoulte bottom-0 left-0 w-full h-1/2   relative z-0 flex min-h-72 items-end bg-frangipani">
+          <figure>
+            <img
+              class="pointer-events-none relative -z-10 select-none"
+              src="./images/person/person_4@2x.png"
+              alt="Isabella Ricci picture."
+            />
+
+            <figcaption
+              class="absolute bottom-0 left-0 z-50 space-y-1 px-6 py-5"
+            >
+              <h2 class="text-xl font-semibold text-white">Isabella Ricci</h2>
+              <h3 class="text-sm capitalize text-white">UX Designer</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="after:content-none absoulte bottom-0 left-0 w-full h-1/2   relative z-0 flex min-h-72 items-end bg-riptide">
+          <figure>
+            <img
+              class="pointer-events-none relative -z-10 select-none"
+              src="./images/person/person_5@2x.png"
+              alt="Noah Conti picture."
+            />
+
+            <figcaption
+              class="absolute bottom-0 left-0 z-50 space-y-1 px-6 py-5"
+            >
+              <h2 class="text-xl font-semibold text-white">Noah Conti</h2>
+              <h3 class="text-sm capitalize text-white">Content Creator</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="see-all-members-tile flex min-h-72 items-end !p-8 font-medium text-bright-gray before:!bg-none"
+        >
+          <a href="#" class="flex items-end gap-1"
+            >See all members
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.3333 4H4.66667C4.26667 4 4 4.26667 4 4.66667C4 5.06667 4.26667 5.33333 4.66667 5.33333H9.73333L4.2 10.8667C3.93333 11.1333 3.93333 11.5333 4.2 11.8C4.46667 12.0667 4.86667 12.0667 5.13333 11.8L10.6667 6.26667V11.3333C10.6667 11.7333 10.9333 12 11.3333 12C11.7333 12 12 11.7333 12 11.3333V4.66667C12 4.26667 11.7333 4 11.3333 4Z"
+                fill="#394150"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
     </main>
   </body>

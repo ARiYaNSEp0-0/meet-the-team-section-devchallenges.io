@@ -23,13 +23,17 @@ module.exports = {
         "4.5xl": [
           "2.5rem",
           {
-            lineHeight: "2.75rem",
-            fontWeight: "500",
+            lineHeight: "3.125rem",
           },
         ],
       },
       spacing: {
         18: "4.5rem",
+        26: "6.625rem",
+      },
+      maxWidth: {
+        paragraph: "45ch",
+        "7xl": "1705px",
       },
     },
   },
