@@ -35,6 +35,27 @@ module.exports = {
         paragraph: "45ch",
         "7xl": "1705px",
       },
+      keyframes: {
+        "roll-reveal": {
+          from: {
+            transform: "translate3d(0,0,0) rotate(12deg) scale(0)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translate3d(0,0,0) rotate(0deg) scale(1)",
+            opacity: "1",
+          },
+        },
+
+        "slide-bottom": {
+          from: { transform: "translate3d(0, -40px, 0)", opacity: "0" },
+          to: { transform: "translate3d(0, 0, 0)", opacity: "1" },
+        },
+      },
+      animation: {
+        "roll-reveal": "0.4s roll-reveal ease-in-out backwards",
+        "slide-bottom": "0.3s slide-bottom ease-out backwards",
+      },
     },
   },
   plugins: [],
